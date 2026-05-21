@@ -92,6 +92,7 @@ header {
     letter-spacing: 0.4em;
     display: block;
     text-shadow: 0 0 20px rgba(201,168,71,0.6);
+    animation: fadeIn 0.6s ease both 0.1s, softGlow 3.5s ease-in-out 1s infinite;
 }
 
 header h1 {
@@ -104,6 +105,7 @@ header h1 {
         0 0 40px rgba(201,168,71,0.4),
         0 2px 4px rgba(0,0,0,0.6);
     line-height: 1.2;
+    animation: fadeSlideUp 0.7s cubic-bezier(0.22,1,0.36,1) both 0.25s, goldPulse 5s ease-in-out 1.5s infinite;
 }
 
 .header-subtitle {
@@ -113,6 +115,7 @@ header h1 {
     margin-top: 0.3rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+    animation: fadeSlideUp 0.6s cubic-bezier(0.22,1,0.36,1) both 0.4s;
 }
 
 .header-divider {
@@ -121,6 +124,7 @@ header h1 {
     justify-content: center;
     gap: 0.75rem;
     margin-top: 1.4rem;
+    animation: fadeIn 0.7s ease both 0.6s;
 }
 
 .header-divider span:not(.diamond) {
@@ -129,6 +133,7 @@ header h1 {
     height: 1px;
     background: linear-gradient(to right, transparent, var(--gold-dark), transparent);
     opacity: 0.7;
+    animation: expandWidth 0.8s cubic-bezier(0.22,1,0.36,1) both 0.7s;
 }
 
 .header-divider .diamond {
@@ -164,7 +169,10 @@ header h1 {
     padding: 28px;
     position: relative;
     overflow: hidden;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s cubic-bezier(0.22,1,0.36,1);
+    animation: cardEntrance 0.65s cubic-bezier(0.22,1,0.36,1) both;
+    animation-delay: calc(var(--i, 0) * 90ms);
+    opacity: 0;
 }
 
 .card::before {
@@ -173,7 +181,12 @@ header h1 {
     top: 0; left: 0; right: 0;
     height: 2px;
     background: linear-gradient(to right, transparent, var(--gold-dark), var(--gold), var(--gold-dark), transparent);
-    opacity: 0.6;
+    opacity: 0.45;
+    transition: opacity 0.35s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
 }
 
 .card:hover {
@@ -181,7 +194,9 @@ header h1 {
     box-shadow:
         0 0 0 1px rgba(201,168,71,0.15),
         0 12px 40px rgba(0,0,0,0.55),
+        0 0 24px rgba(201,168,71,0.06),
         inset 0 1px 0 rgba(201,168,71,0.18);
+    transform: translateY(-3px);
 }
 
 .card-topic {
@@ -223,11 +238,14 @@ header h1 {
     filter: blur(6px);
     user-select: none;
     cursor: pointer;
-    transition: filter 0.35s ease, box-shadow 0.3s ease;
+    transition: filter 0.4s ease, box-shadow 0.3s ease, border-left-color 0.4s ease, transform 0.3s ease;
+    animation: hintPulse 2.8s ease-in-out 2s infinite;
 }
 
 .card-answer:hover {
-    box-shadow: 0 0 12px rgba(201,168,71,0.1);
+    box-shadow: 0 0 16px rgba(201,168,71,0.12);
+    transform: scaleX(1.005);
+    transform-origin: left;
 }
 
 .card-answer.revealed {
@@ -236,6 +254,54 @@ header h1 {
     cursor: text;
     border-left-color: var(--gold);
     box-shadow: 0 0 16px rgba(201,168,71,0.08);
+    animation: revealIn 0.45s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+/* ─── KEYFRAME ANİMASYONLARI ─── */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes expandWidth {
+    from { width: 0; }
+    to   { width: 100px; }
+}
+
+@keyframes softGlow {
+    0%, 100% { text-shadow: 0 0 20px rgba(201,168,71,0.55); }
+    50%       { text-shadow: 0 0 38px rgba(201,168,71,0.95), 0 0 70px rgba(201,168,71,0.25); }
+}
+
+@keyframes goldPulse {
+    0%, 100% {
+        color: var(--gold-light);
+        text-shadow: 0 0 40px rgba(201,168,71,0.35), 0 2px 4px rgba(0,0,0,0.6);
+    }
+    50% {
+        color: #f5e9b2;
+        text-shadow: 0 0 60px rgba(201,168,71,0.6), 0 2px 4px rgba(0,0,0,0.6);
+    }
+}
+
+@keyframes cardEntrance {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hintPulse {
+    0%, 100% { border-left-color: rgba(154,122,40,0.7); }
+    50%       { border-left-color: rgba(201,168,71,0.9); }
+}
+
+@keyframes revealIn {
+    from { opacity: 0.6; transform: scaleY(0.97) translateY(4px); }
+    to   { opacity: 1;   transform: scaleY(1)    translateY(0); }
 }
 
 /* ─── FOOTER ─── */

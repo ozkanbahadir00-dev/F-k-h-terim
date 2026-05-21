@@ -22,16 +22,17 @@ function renderCards(cards) {
     const container = document.getElementById('cards-container');
     container.innerHTML = '';
 
-    cards.forEach(card => {
-        const cardElement = createCardElement(card);
+    cards.forEach((card, index) => {
+        const cardElement = createCardElement(card, index);
         container.appendChild(cardElement);
     });
 }
 
-function createCardElement(card) {
+function createCardElement(card, index = 0) {
     const cardDiv = document.createElement('div');
     cardDiv.className = 'card';
     cardDiv.id = card.id;
+    cardDiv.style.setProperty('--i', Math.min(index, 10));
 
     const topicSpan = document.createElement('span');
     topicSpan.className = 'card-topic';
