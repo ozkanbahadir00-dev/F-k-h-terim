@@ -1,0 +1,374 @@
+[
+  {
+    "id": "card-1",
+    "topic": "Akitler Hukuku",
+    "shown": "Bir kimsenin bir malı belli bir fiyat karşılığında vadeli olarak satıp aynı malı peşin parayla sattığı fiyattan daha ucuza geri satın almasıdır.",
+    "answer": "Bey'u'l-Îne"
+  },
+  {
+    "id": "card-2",
+    "topic": "Akitler Hukuku",
+    "shown": "Bir malın gelirinden faydalanmak için onun bizzat satıcısına kiralanması suretiyle yapılan satışa denir.",
+    "answer": "Bey' bi'l-İstiğlâl"
+  },
+  {
+    "id": "card-3",
+    "topic": "Akitler Hukuku",
+    "shown": "Bedeli iade edildiğinde geri alınmak üzere bir malın satılmasını konu edinen satım akdine denir.",
+    "answer": "Bey' bi'l-Vefâ"
+  },
+  {
+    "id": "card-4",
+    "topic": "Akitler Hukuku",
+    "shown": "Paranın para ile değişimini konu edinen akittir.",
+    "answer": "Sarf Akdi"
+  },
+  {
+    "id": "card-5",
+    "topic": "Akitler Hukuku",
+    "shown": "Sanatkârla ısmarlayan arasında yapılan ve belli bir ücret karşılığında özellikleri belirlenmiş bir şeyin imal edilmesini konu alan akit nevinin adı olmuştur.",
+    "answer": "Istısna' Akdi (Eser sözleşmesi)"
+  },
+  {
+    "id": "card-6",
+    "topic": "Akitler Hukuku",
+    "shown": "Fıkıhta malın malla değişimini ifade eder.",
+    "answer": "Trampa (Mukâyada) Akdi"
+  },
+  {
+    "id": "card-7",
+    "topic": "Akitler Hukuku",
+    "shown": "Bir malın alış fiyatı veya maliyetinden daha düşük bir bedelle satılmasını ifade eder.",
+    "answer": "Vadî'a"
+  },
+  {
+    "id": "card-8",
+    "topic": "Akitler Hukuku",
+    "shown": "Bir malın alış fiyatı veya maliyeti üzerinde herhangi bir değişiklik yapılmadan satılmasını, ayrıca bir kamu görevine tayini ifade eder.",
+    "answer": "Tevliye"
+  },
+  {
+    "id": "card-9",
+    "topic": "Akitler Hukuku",
+    "shown": "Bir malın alış fiyatı veya maliyeti üzerine belirli bir kâr konarak satılmasını ifade eder.",
+    "answer": "Murabaha"
+  },
+  {
+    "id": "card-10",
+    "topic": "Borçlar Hukuku",
+    "shown": "Deyni, bir zimmetten diğer zimmete nakletmektir.",
+    "answer": "Borcun nakli (havale)"
+  },
+  {
+    "id": "card-11",
+    "topic": "Borçlar Hukuku",
+    "shown": "Alacaklının, alacağını tahsil etmeksizin borçlu üzerindeki hakkını tamamen veya kısmen düşürmesidir.",
+    "answer": "İbra"
+  },
+  {
+    "id": "card-12",
+    "topic": "Borçlar Hukuku",
+    "shown": "İki şahıs karşılıklı olarak hem borçlu hem de alacaklı olduklarında borçların birbirine denk düşen miktarı karşılıklı olarak düşürülür.",
+    "answer": "Takas"
+  },
+  {
+    "id": "card-13",
+    "topic": "Borçlar Hukuku",
+    "shown": "Yeni bir unsur ile borcun değişmesi, tarafların anlaşması ile eski borcun, yerini yeni bir borca bırakmasıdır.",
+    "answer": "Tecdit"
+  },
+  {
+    "id": "card-14",
+    "topic": "Borçlar Hukuku",
+    "shown": "Tarafların karşılıklı rıza ve anlaşma ile borcun konusunu değiştirmeleridir.",
+    "answer": "İstibdal (ifa yerini tutan eda)"
+  },
+  {
+    "id": "card-15",
+    "topic": "Borçlar Hukuku",
+    "shown": "Borcun ödenmesi ya da borç ilişkisinden kaynaklanan yükümlülüğün yerine getirilmesi anlamına gelir.",
+    "answer": "İfa"
+  },
+  {
+    "id": "card-16",
+    "topic": "Borçlar Hukuku",
+    "shown": "Satıcı ile müşterinin karşılıklı anlaşarak akdi ve akdin sonuçlarını bozmalarıdır.",
+    "answer": "İkale"
+  },
+  {
+    "id": "card-17",
+    "topic": "Akitler Hukuku",
+    "shown": "Hukuki tasarrufa konu olmalarında hukukun bir sakınca görmediği akitlere denir.",
+    "answer": "Meşru Akid"
+  },
+  {
+    "id": "card-18",
+    "topic": "Akitler Hukuku",
+    "shown": "Hukukun yasakladığı, hukuki tasarrufa konu olmasını caiz görmediği akitlere denir.",
+    "answer": "Gayrimeşru Akid"
+  },
+  {
+    "id": "card-19",
+    "topic": "Akitler Hukuku",
+    "shown": "Aslı ve vasfı itibariyle hukuka uygun olan, bir diğer ifadeyle rükün ve şartlarında eksiklik bulunmayan akitlere denir.",
+    "answer": "Sahih Akid"
+  },
+  {
+    "id": "card-20",
+    "topic": "Akitler Hukuku",
+    "shown": "Aslı veya vasfı itibariyle hukuka uygun olmayan, bir diğer ifadeyle şart veya rükünlerinden biri eksik bulunan akitlere denir.",
+    "answer": "Fasit Akid"
+  },
+  {
+    "id": "card-21",
+    "topic": "Akitler Hukuku",
+    "shown": "Akit konusu malın teslimi ile tamam olan, mal teslim edilmeden tamamlanmayan akitlere denir.",
+    "answer": "Ayni Akid"
+  },
+  {
+    "id": "card-22",
+    "topic": "Akitler Hukuku",
+    "shown": "Akit konusu malın teslimine gerek olmaksızın tamam olan akitlere denir.",
+    "answer": "Gayr-i Aynî Akid"
+  },
+  {
+    "id": "card-23",
+    "topic": "Akitler Hukuku",
+    "shown": "Akdi yapan taraflarda akdin geçerliliğini engelleyen herhangi bir kusur ya da yetkisizlik durumu söz konusu olmayıp kurulduğu andan itibaren geçerli olan akitlere denir.",
+    "answer": "Nafiz Akid"
+  },
+  {
+    "id": "card-24",
+    "topic": "Akitler Hukuku",
+    "shown": "Akdi yapan taraflardan en az birinde akdin geçerliliğini engelleyen bir kusur ya da yetkisizlik sebebiyle hüküm ifade etmesi için üçüncü bir şahsın onayına muhtaç olan akitlere denir.",
+    "answer": "Mevkûf Akid"
+  },
+  {
+    "id": "card-25",
+    "topic": "Akitler Hukuku",
+    "shown": "Bu akitlerde her iki taraf da karşı tarafa bir şey verirken karşılığını almaktadır (Mesela evini kiraya veren kişi, evinin menfaat mülkiyetini karşı tarafa devrederken her ay belli bir kira bedeli almaktadır. Kiracı açısından düşünüldüğünde o da her ay belli bir kira bedeli öderken karşılığında evin menfaat mülkiyetine sahip olmaktadır).",
+    "answer": "İvazlı Akid"
+  },
+  {
+    "id": "card-26",
+    "topic": "Akitler Hukuku",
+    "shown": "Bu tür akitlerde taraflardan biri karşı tarafa bir şey verirken karşılığında bir şey elde etmemektedir (Hiba, vasiyet gibi akitler örnek olarak zikredilebilir).",
+    "answer": "Teberru Akdi"
+  },
+  {
+    "id": "card-27",
+    "topic": "Akitler Hukuku",
+    "shown": "Akdin yüklediği borcun tam ve zamanında ifa edilmemesi anlamına gelir.",
+    "answer": "Akdi Kusur"
+  },
+  {
+    "id": "card-28",
+    "topic": "Akitler Hukuku",
+    "shown": "Taraflardan birinin ya da her ikisinin akdi geçerli kılıp kılmamada serbest olması, yani akdin onun açısından bağlayıcı olmaması anlamına gelir.",
+    "answer": "Muhayyerlik"
+  },
+  {
+    "id": "card-29",
+    "topic": "Akitler Hukuku",
+    "shown": "Beğenmezse geri verme, ya da geri alma şartıyla yapılan alış-veriş her iki taraf için de caizdir.",
+    "answer": "Şart Muhayyerliği"
+  },
+  {
+    "id": "card-30",
+    "topic": "Akitler Hukuku",
+    "shown": "Bir şeyi görmeden satın almak caizdir. Bu durumda satın alanın malı görünce muhayyerliği vardır. Dilerse kabul eder, dilerse geri verir.",
+    "answer": "Görme muhayyerliği"
+  },
+  {
+    "id": "card-31",
+    "topic": "Akitler Hukuku",
+    "shown": "Herhangi bir kayıt koymadan, bir özellik zikretmeden yapılan alışverişte satılan şeyin tam ve sağlam olduğu varsayılır. Böyle değilse, yani satılan mal herhangi bir kusur taşıyorsa müşterinin bu akdi feshetme hakkı vardır.",
+    "answer": "Kusur Muhayyerliği"
+  },
+  {
+    "id": "card-32",
+    "topic": "Akitler Hukuku",
+    "shown": "Rükünleri ve kuruluş şartlarını tam olarak taşıyan akittir.",
+    "answer": "Mün'akid akit"
+  },
+  {
+    "id": "card-33",
+    "topic": "Akitler Hukuku",
+    "shown": "Asıl unsurları sebebiyle meşru olmayan akit demektir (Akdin asıl unsurları ile kastedilen şey akdin rükünleri ve kuruluş şartlarıdır).",
+    "answer": "Batıl Akid"
+  },
+  {
+    "id": "card-34",
+    "topic": "Borçlar Hukuku",
+    "shown": "Aynı cins malların mübadelesinin peşin olmaması halinde gerçekleşen faiz türüdür.",
+    "answer": "Ribe'n-nesîe"
+  },
+  {
+    "id": "card-35",
+    "topic": "Borçlar Hukuku",
+    "shown": "Mallardan herhangi biri kendi cinsiyle mübadele edildiğinde mübadelenin eşit olmadığında gerçekleşen faiz türüdür.",
+    "answer": "Ribe'l-fadl"
+  },
+  {
+    "id": "card-36",
+    "topic": "Haksız İktisap ve Haksız Fiil",
+    "shown": "Hukuki bir sebebe dayanmadan bir şahsın malvarlığının başkası aleyhine çoğalması şeklinde tanımlanabilir.",
+    "answer": "Haksız İktisap"
+  },
+  {
+    "id": "card-37",
+    "topic": "Haksız İktisap ve Haksız Fiil",
+    "shown": "Hukuka aykırı olarak bir kimsenin şahsına veya mal varlığına zarar veren fiile denir.",
+    "answer": "Haksız Fiil"
+  },
+  {
+    "id": "card-38",
+    "topic": "Haksız İktisap ve Haksız Fiil",
+    "shown": "Bir şahsın fiili bazen doğrudan bir zarara sebebiyet verir ki buna mübaşeret denir. Fiili işleyen kimseye de mübaşir denir.",
+    "answer": "Mübaşeret ve Mübaşir"
+  },
+  {
+    "id": "card-39",
+    "topic": "Haksız İktisap ve Haksız Fiil",
+    "shown": "Bazen ilgili fiil doğrudan bir zarara sebebiyet vermemekle birlikte, dolaylı olarak bir zarara sebebiyet verebilir ki buna da tesebbüb denir. Böyle bir fiili yapan kimseye de mütesebbib denir.",
+    "answer": "Tesebbüb ve Mütesebbib"
+  },
+  {
+    "id": "card-40",
+    "topic": "Haksız İktisap ve Haksız Fiil",
+    "shown": "Zarar ile fiil arasında zararın o fiilden kaynaklandığını gösteren bir bağdır.",
+    "answer": "İlliyet bağı"
+  },
+  {
+    "id": "card-41",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Satım veya bu hükümdeki bir akiyle alınmış taşınmaz veya taşınmaz hükmündeki özel mülkiyete konu bir malı müşteriye mal olduğu bedelle cebren alıp mülkiyetini elde etme hakkını ifade eder.",
+    "answer": "Şuf'a"
+  },
+  {
+    "id": "card-42",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Şüf'a hakkı sahibinin (şefi'), söz konusu taşınmazın satıldığını öğrendiği ilk anda, hiçbir gecikme göstermeksizin bu hakkını kullanmak istediğini beyan etmesidir.",
+    "answer": "Talebu'l-müvâsebe"
+  },
+  {
+    "id": "card-43",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "İlk aşamada (taleb-i müvâsebe) niyetini ortaya koyan kişinin, bu talebini hukuki bir zemine oturtmak ve ispatlanabilir hale getirmek için resmi şahitler huzurunda niyetini tekrarlamasıdır.",
+    "answer": "Talebu't-takrîr"
+  },
+  {
+    "id": "card-44",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Şüf'a hakkı sahibinin (şefi'), şahitler huzurunda niyetini kesinleştirmesine rağmen yeni alıcının söz konusu taşınmazı kendi rızasıyla devretmemesi durumunda, konuyu resmi yargı merciine (kadıya/mahkemeye) taşımasıdır.",
+    "answer": "Talebu'l-husûmet"
+  },
+  {
+    "id": "card-45",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Bir kimsenin kendi arazisini, bağını veya bahçesini sulamak amacıyla, başkasına ait özel bir su kaynağından veya ortak bir kanaldan (ark) belirli bir ölçüde su alma hakkıdır.",
+    "answer": "Hakk-ı şirb"
+  },
+  {
+    "id": "card-46",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Bir kişinin, anayola veya kendi mülküne ulaşabilmek için mecburi olarak başkasına ait bir araziden veya başkalarının mülkiyetindeki çıkmaz sokaktan geçme hakkıdır.",
+    "answer": "Hakku't-tarîki'l-hâss"
+  },
+  {
+    "id": "card-47",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Bir arazideki yağmur suyunun, ihtiyaç fazlası sulama suyunun veya atık suyun, doğal bir eğimle veya bir ark/kanal vasıtasıyla başkasına ait alt komşu araziden geçirilerek akıtılması hakkıdır.",
+    "answer": "Hakku'l-mesîl"
+  },
+  {
+    "id": "card-48",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Kullanılacak temiz suları bir başkasının arazisinden geçirme hakkıdır.",
+    "answer": "Hakku'l-mecra"
+  },
+  {
+    "id": "card-49",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Başkasına ait mevcut bir yapı/bina üzerinde yeni bir yapı tesisini ifade eden bir irtifak hakkıdır.",
+    "answer": "Hakku't-te'allî"
+  },
+  {
+    "id": "card-50",
+    "topic": "Mülkiyet ve İrtifak Hakları",
+    "shown": "Bir kişiye inşa ettiği yapısının kirişlerinin uçlarını bir başkasına ait duvar ya da direğe dayandırma yetkisi veren bir irtifaktır.",
+    "answer": "Hakku vad'i'l-ciz"
+  },
+  {
+    "id": "card-51",
+    "topic": "Eşya Hukuku",
+    "shown": "Fiziki varlığı bulunan menkul veya gayrimenkul mallar üzerindeki mülkiyettir.",
+    "answer": "Ayn Mülkiyeti"
+  },
+  {
+    "id": "card-52",
+    "topic": "Eşya Hukuku",
+    "shown": "Bir kişinin bir şeyin bizzat kendisine değil ancak ondan faydalanma hakkına sahip olması söz konusu olduğu mülkiyet çeşididir.",
+    "answer": "Menfaat Mülkiyeti"
+  },
+  {
+    "id": "card-53",
+    "topic": "Eşya Hukuku",
+    "shown": "Herhangi bir sebeple bir kişinin diğer bir kişinin zimmetindeki alacak hakkına sahip olmasıdır.",
+    "answer": "Deyn Mülkiyeti"
+  },
+  {
+    "id": "card-54",
+    "topic": "Eşya Hukuku",
+    "shown": "Bir malın malikinin rızası olmaksızın bir başkası tarafından önemli bir şekilde değiştirilmesi durumudur.",
+    "answer": "Hukuki tağyir"
+  },
+  {
+    "id": "card-55",
+    "topic": "Eşya Hukuku",
+    "shown": "Yeni bir kişi veya eşyanın haklar konusunda artık var olmayan diğerinin yerine geçmesidir.",
+    "answer": "Halefiyet"
+  },
+  {
+    "id": "card-56",
+    "topic": "Yargılama Hukuku",
+    "shown": "Bazı durumlarda mali bir yükümlülüğü yerine getirmekten geri duran kişi adına satım işlemi bizzat yetkili merciler tarafından yerine getirilmesidir.",
+    "answer": "Cebrî satım"
+  },
+  {
+    "id": "card-57",
+    "topic": "Eşya Hukuku",
+    "shown": "Maliki bulunmayan, yani üzerinde bir mülkiyet hakkı tesis edilmemiş bulunan bir mubâh malı ele geçirmektir.",
+    "answer": "İhraz"
+  },
+  {
+    "id": "card-58",
+    "topic": "Eşya Hukuku",
+    "shown": "Aynı cins ve vasıfta olsalar bile birimleri arasında farklılıklar bulunan, insanların birini diğeri yerine kabul etmediği, her birine ayrı değer biçtiği mallardır.",
+    "answer": "Kıyemî mallar"
+  },
+  {
+    "id": "card-59",
+    "topic": "Eşya Hukuku",
+    "shown": "Birimleri ve cüzleri arasında benzerlik bulunan ve normal şartlarda insanlar arası ilişkilerde aralarında fark gözetilmeyecek şekilde birbirlerinin yerine geçen mallardır.",
+    "answer": "Mislî mal"
+  },
+  {
+    "id": "card-60",
+    "topic": "Eşya Hukuku",
+    "shown": "İslam hukukuna göre hem kendisinden yararlanılması dinen ve hukuken meşru (helal) olan hem de fiilen ele geçirilip kontrol altına alınmış (ihraz edilmiş) malları ifade eder.",
+    "answer": "Mütekavvim mal"
+  },
+  {
+    "id": "card-61",
+    "topic": "Yargılama Hukuku",
+    "shown": "Dinin hükümlerine göre esasen mevcut olduğu halde mahkemede ispat edilemeyen hak türüdür.",
+    "answer": "Dini Hak"
+  },
+  {
+    "id": "card-62",
+    "topic": "Yargılama Hukuku",
+    "shown": "Dinin hükümlerine göre mevcut olsun veya olmasın mahkemede ispatı mümkün olan hak türüdür.",
+    "answer": "Kazai Hak"
+  }
+]
