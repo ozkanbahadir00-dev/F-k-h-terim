@@ -34,25 +34,36 @@ function createCardElement(card, index = 0) {
     cardDiv.id = card.id;
     cardDiv.style.setProperty('--i', Math.min(index, 10));
 
-    const topicSpan = document.createElement('span');
-    topicSpan.className = 'card-topic';
-    topicSpan.textContent = card.topic;
+    const headerDiv = document.createElement('div');
+    headerDiv.className = 'card-header';
 
     const questionDiv = document.createElement('div');
     questionDiv.className = 'card-question';
     questionDiv.textContent = card.shown;
 
+    const topicSpan = document.createElement('span');
+    topicSpan.className = 'card-topic';
+    topicSpan.textContent = card.topic;
+
+    headerDiv.appendChild(questionDiv);
+    headerDiv.appendChild(topicSpan);
+
+    const answerWrap = document.createElement('div');
+    answerWrap.className = 'card-answer-wrap';
+
     const answerDiv = document.createElement('div');
     answerDiv.className = 'card-answer';
     answerDiv.textContent = card.answer;
 
-    answerDiv.addEventListener('click', () => {
-        answerDiv.classList.toggle('revealed');
+    answerWrap.appendChild(answerDiv);
+
+    answerWrap.addEventListener('click', () => {
+        const isRevealed = answerWrap.classList.toggle('revealed');
+        answerDiv.classList.toggle('revealed', isRevealed);
     });
 
-    cardDiv.appendChild(topicSpan);
-    cardDiv.appendChild(questionDiv);
-    cardDiv.appendChild(answerDiv);
+    cardDiv.appendChild(headerDiv);
+    cardDiv.appendChild(answerWrap);
 
     return cardDiv;
 }

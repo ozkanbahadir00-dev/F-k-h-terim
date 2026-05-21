@@ -199,10 +199,27 @@ header h1 {
     transform: translateY(-3px);
 }
 
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.card-question {
+    flex: 1;
+    font-family: 'Amiri', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--parchment);
+    line-height: 1.45;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
 .card-topic {
-    position: absolute;
-    top: 16px;
-    right: 20px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 3px;
     display: inline-block;
     background: rgba(201,168,71,0.12);
     border: 1px solid rgba(201,168,71,0.3);
@@ -214,17 +231,17 @@ header h1 {
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
+    white-space: nowrap;
 }
 
-.card-question {
-    font-family: 'Amiri', Georgia, serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--parchment);
-    margin-bottom: 1rem;
-    margin-right: 110px;
-    line-height: 1.45;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+.card-answer-wrap {
+    position: relative;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+}
+
+.card-answer-wrap.revealed {
+    cursor: default;
 }
 
 .card-answer {
@@ -232,29 +249,53 @@ header h1 {
     line-height: 1.75;
     color: rgba(253,246,227,0.88);
     background: rgba(10,26,18,0.5);
-    border-left: 3px solid var(--gold-dark);
+    border-left: 3px solid rgba(154,122,40,0.6);
     border-radius: 0 8px 8px 0;
     padding: 0.9rem 1rem;
     filter: blur(6px);
     user-select: none;
-    cursor: pointer;
-    transition: filter 0.4s ease, box-shadow 0.3s ease, border-left-color 0.4s ease, transform 0.3s ease;
-    animation: hintPulse 2.8s ease-in-out 2s infinite;
+    pointer-events: none;
+    transition: filter 0.5s ease, border-left-color 0.4s ease, box-shadow 0.4s ease;
 }
 
-.card-answer:hover {
-    box-shadow: 0 0 16px rgba(201,168,71,0.12);
-    transform: scaleX(1.005);
-    transform-origin: left;
+.card-answer-wrap:hover .card-answer {
+    filter: blur(3.5px);
+    border-left-color: rgba(201,168,71,0.75);
+    box-shadow: 0 0 18px rgba(201,168,71,0.1);
 }
 
-.card-answer.revealed {
+.card-answer-wrap.revealed .card-answer {
     filter: blur(0);
     user-select: text;
-    cursor: text;
     border-left-color: var(--gold);
     box-shadow: 0 0 16px rgba(201,168,71,0.08);
-    animation: revealIn 0.45s cubic-bezier(0.22,1,0.36,1) both;
+    pointer-events: auto;
+}
+
+.reveal-hint {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    color: rgba(201,168,71,0.75);
+    font-family: 'Lora', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    animation: hintBreathe 2.6s ease-in-out 1.5s infinite;
+}
+
+.reveal-hint-icon {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.card-answer-wrap.revealed .reveal-hint {
+    opacity: 0;
+    animation: none;
 }
 
 /* ─── KEYFRAME ANİMASYONLARI ─── */
@@ -294,14 +335,9 @@ header h1 {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes hintPulse {
-    0%, 100% { border-left-color: rgba(154,122,40,0.7); }
-    50%       { border-left-color: rgba(201,168,71,0.9); }
-}
-
-@keyframes revealIn {
-    from { opacity: 0.6; transform: scaleY(0.97) translateY(4px); }
-    to   { opacity: 1;   transform: scaleY(1)    translateY(0); }
+@keyframes hintBreathe {
+    0%, 100% { opacity: 0.6; }
+    50%       { opacity: 1.0; }
 }
 
 /* ─── FOOTER ─── */
@@ -347,7 +383,6 @@ footer {
 
     .card-question {
         font-size: 1.1rem;
-        margin-right: 90px;
     }
 
     .card-answer {
