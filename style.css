@@ -1,3 +1,18 @@
+:root {
+    --gold:        #c9a847;
+    --gold-light:  #e8d08a;
+    --gold-dark:   #9a7a28;
+    --emerald:     #0e3527;
+    --emerald-mid: #164a38;
+    --emerald-glow:#1f6b50;
+    --night:       #0a1020;
+    --parchment:   #fdf6e3;
+    --parchment-2: #f5ede0;
+    --ink:         #1c120a;
+    --ink-mid:     #3b2e1e;
+    --ink-light:   #6b5744;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,127 +21,262 @@
 
 html, body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
-    background-color: #f4f7f6;
-    font-family: 'Segoe UI', Inter, system-ui, sans-serif;
-    color: #1a252f;
-    line-height: 1.6;
+    background-color: var(--night);
+    font-family: 'Lora', Georgia, serif;
+    color: var(--parchment);
+    line-height: 1.7;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Derin arka plan gradyanı */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 80% 60% at 50% 0%,   rgba(30,100,65,0.35) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 50% at 80% 80%,  rgba(10,20,40,0.8)   0%, transparent 70%),
+        linear-gradient(160deg, #0a1a12 0%, #0a1020 45%, #0d1a10 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Altın ışık huzmesi — üst */
+body::after {
+    content: '';
+    position: fixed;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(201,168,71,0.12) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-overlay {
+    display: none;
 }
 
 main {
+    position: relative;
+    z-index: 1;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem 2rem;
 }
 
+/* ─── HEADER ─── */
 header {
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.header-ornament {
+    font-size: 1.4rem;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.4em;
+    display: block;
+    text-shadow: 0 0 20px rgba(201,168,71,0.6);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-family: 'Amiri', Georgia, serif;
+    font-size: 3rem;
     font-weight: 700;
-    color: #1a252f;
-    letter-spacing: -0.5px;
+    color: var(--gold-light);
+    letter-spacing: 0.02em;
+    text-shadow:
+        0 0 40px rgba(201,168,71,0.4),
+        0 2px 4px rgba(0,0,0,0.6);
+    line-height: 1.2;
 }
 
+.header-subtitle {
+    font-family: 'Amiri', Georgia, serif;
+    font-size: 1.1rem;
+    color: rgba(232,208,138,0.65);
+    margin-top: 0.3rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.header-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.4rem;
+}
+
+.header-divider span:not(.diamond) {
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold-dark), transparent);
+    opacity: 0.7;
+}
+
+.header-divider .diamond {
+    color: var(--gold);
+    font-size: 0.7rem;
+    opacity: 0.9;
+}
+
+/* ─── CARDS CONTAINER ─── */
 .cards-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 820px;
 }
 
+/* ─── CARD ─── */
 .card {
     width: 100%;
-    background-color: #ffffff;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    padding: 25px;
+    background: linear-gradient(145deg,
+        rgba(253,246,227,0.07) 0%,
+        rgba(253,246,227,0.04) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 14px;
+    border: 1px solid rgba(201,168,71,0.25);
+    box-shadow:
+        0 0 0 1px rgba(201,168,71,0.08),
+        0 8px 32px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(201,168,71,0.12);
+    padding: 28px;
     position: relative;
     overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold-dark), var(--gold), var(--gold-dark), transparent);
+    opacity: 0.6;
+}
+
+.card:hover {
+    border-color: rgba(201,168,71,0.45);
+    box-shadow:
+        0 0 0 1px rgba(201,168,71,0.15),
+        0 12px 40px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(201,168,71,0.18);
 }
 
 .card-topic {
     position: absolute;
-    top: 15px;
+    top: 16px;
     right: 20px;
     display: inline-block;
-    background-color: #f0f3f5;
-    color: #667080;
-    font-size: 0.75rem;
+    background: rgba(201,168,71,0.12);
+    border: 1px solid rgba(201,168,71,0.3);
+    color: var(--gold-light);
+    font-size: 0.7rem;
     font-weight: 600;
-    padding: 4px 10px;
+    font-family: 'Lora', serif;
+    padding: 4px 12px;
     border-radius: 20px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
 }
 
 .card-question {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1a252f;
+    font-family: 'Amiri', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--parchment);
     margin-bottom: 1rem;
-    margin-right: 100px;
-    line-height: 1.4;
+    margin-right: 110px;
+    line-height: 1.45;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 .card-answer {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #2d3748;
-    background-color: #fdfdfd;
-    border-left: 4px solid #3498db;
-    border-radius: 6px;
-    padding: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(253,246,227,0.88);
+    background: rgba(10,26,18,0.5);
+    border-left: 3px solid var(--gold-dark);
+    border-radius: 0 8px 8px 0;
+    padding: 0.9rem 1rem;
     filter: blur(6px);
     user-select: none;
     cursor: pointer;
-    transition: filter 0.3s ease-in-out, user-select 0.3s ease-in-out;
+    transition: filter 0.35s ease, box-shadow 0.3s ease;
+}
+
+.card-answer:hover {
+    box-shadow: 0 0 12px rgba(201,168,71,0.1);
 }
 
 .card-answer.revealed {
     filter: blur(0);
     user-select: text;
     cursor: text;
+    border-left-color: var(--gold);
+    box-shadow: 0 0 16px rgba(201,168,71,0.08);
 }
 
+/* ─── FOOTER ─── */
 footer {
+    position: relative;
+    z-index: 1;
     text-align: center;
     padding: 2rem 1rem;
-    font-size: 0.85rem;
-    color: #a0aec0;
-    background-color: #f4f7f6;
-    margin-top: 2rem;
+    font-family: 'Amiri', Georgia, serif;
+    font-size: 0.95rem;
+    color: rgba(201,168,71,0.5);
+    border-top: 1px solid rgba(201,168,71,0.1);
+    margin-top: 3rem;
+    letter-spacing: 0.08em;
 }
 
-/* Responsive Design */
+.footer-ornament {
+    font-size: 0.6rem;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+    opacity: 0.6;
+}
+
+/* ─── RESPONSIVE ─── */
 @media (max-width: 640px) {
     header h1 {
-        font-size: 1.75rem;
+        font-size: 2.1rem;
+    }
+
+    .header-divider span:not(.diamond) {
+        width: 60px;
     }
 
     .card {
-        padding: 1.5rem;
+        padding: 1.4rem;
     }
 
     .card-topic {
         top: 12px;
-        right: 15px;
-        font-size: 0.65rem;
+        right: 14px;
+        font-size: 0.62rem;
     }
 
     .card-question {
@@ -135,15 +285,15 @@ footer {
     }
 
     .card-answer {
-        font-size: 1rem;
+        font-size: 0.98rem;
     }
 
     .cards-container {
         gap: 1rem;
-        padding: 0 0.5rem;
+        padding: 0 0.25rem;
     }
 
     main {
-        padding: 1.5rem 1rem;
+        padding: 2rem 1rem;
     }
 }
